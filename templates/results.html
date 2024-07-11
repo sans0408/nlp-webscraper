@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Results</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scraping Results</h1>
+        <div class="result-box">
+            <h2>Tokenization and POS Tagging</h2>
+            <div id="pos-tags">
+                {{ pos_tags|safe }}
+            </div>
+        </div>
+        <div class="result-box">
+            <h2>Frequency Distribution</h2>
+            <div id="frequency-distribution">
+                {{ frequency_distribution|safe }}
+            </div>
+        </div>
+        <div class="result-box">
+            <h2>Changes after Encoding/Decoding (UTF-8)</h2>
+            <div id="encoding-check">
+                {{ encoding_check }}
+            </div>
+        </div>
+        <div class="result-box">
+            <h2>Context Free Grammar</h2>
+            <div id="grammar">
+                <pre>{{ grammar }}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

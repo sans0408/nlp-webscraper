@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt install python3 python3-pip -y
+sudo apt install python3-venv
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install --upgrade pip
+pip install Flask requests beautifulsoup4 google-cloud-storage nltk tabulate
+mkdir webscraper
+cd webscraper

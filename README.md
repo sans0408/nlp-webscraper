@@ -1,5 +1,5 @@
 # NLP Webscraper
-Website to webscrape a given link and display information about it
+Website to webscrape a given link and perform NLP based analysis on its content
 
 ## Table of Contents
 1. [Introduction](#introduction)
